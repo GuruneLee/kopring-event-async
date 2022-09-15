@@ -9,3 +9,8 @@ class KopringEventAsyncApplication
 fun main(args: Array<String>) {
     runApplication<KopringEventAsyncApplication>(*args)
 }
+
+
+fun log(message: String) {
+    println("${message}: ${Thread.currentThread().id}")
+}
